@@ -1,0 +1,74 @@
+/* 写公共样式 */
+
+
+/* 主题颜色 */
+
+@main-color: #006699;
+
+img{
+    vertical-align: middle;
+}
+/* 头部区域的公共样式 */
+
+#header {
+    height: 45px;
+    background-color: @main-color;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    >h4 {
+        margin: 0;
+        line-height: 45px;
+        font-weight: normal;
+    }
+    .fa-search {
+        color: white;
+        position: absolute;
+        top: 14px;
+        right: 20px;
+    }
+}
+
+
+/* 底部公共样式 */
+
+#footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: @main-color;
+    z-index: 999;
+    .mui-row{
+        
+        >div{
+            >a{
+                color: white;
+                font-size: 14px;
+                display: block;
+                padding: 11px;
+                text-align: center;
+                &::before{
+                    display: block;
+                }
+                &.active{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+
+html,body{
+    height: 100%;
+}
+/* 主体内容的公共样式 */
+#main{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+}

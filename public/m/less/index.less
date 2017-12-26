@@ -1,0 +1,113 @@
+@import 'base.less';
+
+/*到行条*/
+#nav {
+  .mui-row {
+
+    padding: 10px;
+    > div {
+      > a {
+        display: block;
+        > img {
+          vertical-align: middle;
+          width: 100px;
+          height: 94px;
+        }
+      }
+    }
+  }
+}
+
+/*广告*/
+#adv {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  .mui-row {
+    .adv-left {
+      .mui-row {
+        > div {
+          > a {
+            display: block;
+            > img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .adv-right {
+    > a {
+      display: block;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*品牌专区*/
+#brand {
+  padding: 0 10px;
+  > a {
+    display: block;
+    > img {
+      width: 100%;
+    }
+  }
+  .mui-row {
+    > div {
+      > a {
+        display: block;
+        > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*运动专区*/
+#sport,
+#women,
+#man{
+  padding: 0 10px;
+  text-align: center;
+  > a {
+    display: block;
+    > img {
+      width: 100%;
+    }
+  }
+  .mui-row {
+    > div {
+      padding: 0 5px;
+      .product {
+
+        > a {
+          display: block;
+          > img {
+            width: 100%;
+          }
+        }
+        .product-name {
+          font-size: 14px;
+          height: 28px;
+          line-height: 14px;
+          overflow: hidden;
+          text-align: center;
+        }
+        .product-price {
+            font-size: 12px;
+            text-align: center;
+            >span{
+              color: red;
+            }
+        }
+
+      }
+    }
+
+  }
+}
